@@ -27,7 +27,6 @@ class MyApp extends StatelessWidget {
           ),
           body: SafeArea(
               child: Container(
-            color: Colors.indigo,
             margin: EdgeInsets.only(left: 23.0, top: 0, right: 23.0, bottom: 0),
             padding: EdgeInsets.only(left: 0, top: 50.0, right: 0, bottom: 0),
             child: Column(
@@ -36,9 +35,9 @@ class MyApp extends StatelessWidget {
                   image: AssetImage('assets/images/ic_payment.png'),
                   height: 200,
                 ),
-                Text(
-                  "Rich Together",
-                  style: mainHeader,
+                Padding(
+                  padding: EdgeInsets.only(top: 20.0, bottom: 4.0),
+                  child: Text("Rich Together", style: mainHeader),
                 ),
                 Text(
                   "Save your money little bit and we \nwill help to be rich.",
