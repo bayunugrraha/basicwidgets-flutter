@@ -26,7 +26,10 @@ class MyApp extends StatelessWidget {
           // closer together (more dense) than on mobile platforms.
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        home: Scaffold(body: Text("Flutter Pertama")));
+        home: Scaffold(
+            body: SafeArea(
+          child: Text("Flutter Pertama"),
+        )));
   }
 }
 
