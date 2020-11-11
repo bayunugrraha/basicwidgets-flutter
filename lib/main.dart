@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'font_style.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,7 +27,6 @@ class MyApp extends StatelessWidget {
           ),
           body: SafeArea(
               child: Container(
-            color: Colors.blueAccent,
             margin: EdgeInsets.only(left: 45.0, top: 0, right: 0, bottom: 0),
             padding: EdgeInsets.only(left: 0, top: 50.0, right: 0, bottom: 0),
             child: Column(
@@ -35,8 +35,12 @@ class MyApp extends StatelessWidget {
                   image: AssetImage('assets/images/ic_payment.png'),
                   height: 200,
                 ),
-                Text("Rich Together"),
-                Text("Save your money little bit and we will help to be rich")
+                Text(
+                  "Rich Together",
+                  style: mainHeader,
+                ),
+                Text("Save your money little bit and we will help to be rich",
+                    style: subHeader)
               ],
             ),
           )),
