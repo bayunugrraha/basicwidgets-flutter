@@ -27,7 +27,8 @@ class MyApp extends StatelessWidget {
           ),
           body: SafeArea(
               child: Container(
-            margin: EdgeInsets.only(left: 45.0, top: 0, right: 0, bottom: 0),
+            color: Colors.indigo,
+            margin: EdgeInsets.only(left: 23.0, top: 0, right: 23.0, bottom: 0),
             padding: EdgeInsets.only(left: 0, top: 50.0, right: 0, bottom: 0),
             child: Column(
               children: <Widget>[
@@ -39,8 +40,11 @@ class MyApp extends StatelessWidget {
                   "Rich Together",
                   style: mainHeader,
                 ),
-                Text("Save your money little bit and we will help to be rich",
-                    style: subHeader)
+                Text(
+                  "Save your money little bit and we \nwill help to be rich.",
+                  style: subHeader,
+                  textAlign: TextAlign.center,
+                )
               ],
             ),
           )),
