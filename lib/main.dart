@@ -20,18 +20,23 @@ class MyApp extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         home: Scaffold(
-            appBar: AppBar(
-              title: Text("Cashy"),
-              backgroundColor: Colors.red,
-              actions: <Widget>[
-                IconButton(icon: Icon(Icons.mail), onPressed: () {})
+          appBar: AppBar(
+            title: Text("Cashy"),
+            backgroundColor: Colors.blueAccent,
+          ),
+          body: SafeArea(
+              child: Container(
+            child: Column(
+              children: <Widget>[
+                Image(
+                  image: AssetImage('assets/images/ic_payment.png'),
+                  height: 200,
+                ),
+                Text("Rich Together"),
+                Text("Save your money little bit and we will help to be rich")
               ],
             ),
-            body: SafeArea(
-              child: Image(
-                image: AssetImage('assets/images/ic_payment.png'),
-                height: 200,
-              ),
-            )));
+          )),
+        ));
   }
 }
